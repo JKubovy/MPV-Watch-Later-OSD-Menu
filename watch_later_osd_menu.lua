@@ -67,10 +67,10 @@ end
 function parse_filename(string, name, index)
 	local base = tostring(plen):len()
 	return string:gsub("%%N", "\\N")
-							 :gsub("%%pos", string.format("%0"..base.."d", index+1))
-							 :gsub("%%name", name)
-							 -- undo name escape
-							 :gsub("%%%%", "%%")
+		:gsub("%%pos", string.format("%0"..base.."d", index+1))
+		:gsub("%%name", name)
+	 	-- undo name escape
+		:gsub("%%%%", "%%")
 end
 
 function parse_filename_by_index(index)
