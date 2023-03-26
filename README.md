@@ -14,10 +14,10 @@ This is a Lua script for the MPV media player that shows a list of the saved fil
 1. Download the script file (`watch_later_osd_menu.lua`)
 2. Move the script file to the MPV scripts directory (`~/.config/mpv/scripts/` on Unix or `%APPDATA%\mpv\scripts\` on Windows)
 3. Add the following line to your `mpv.conf` file (create one if it doesn't exist):
-	'write-filename-in-watch-later-config'
+	`write-filename-in-watch-later-config`
 4. If you have already saved positions you need to resave them with previous option set
 5. Add the following line to your `input.conf` file (create one if it doesn't exist):
-	'Shift+Enter script-binding watch_later_osd_menu/showmenu'
+	`Shift+Enter script-binding watch_later_osd_menu/showmenu`
 6. Save the file and restart MPV.
 
 ## Usage
