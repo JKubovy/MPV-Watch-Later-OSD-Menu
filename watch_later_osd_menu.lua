@@ -3,12 +3,14 @@
     https://github.com/JKubovy/MPV-Watch-Later-OSD-Menu
 
     Author: Jan Kubovy <Xsichtik@gmail.com>
-    License: Unlicense	You need to have set 'write-filename-in-watch-later-config' in mpv.conf!
-]]
+    License: Unlicense
+    You need to have set 'write-filename-in-watch-later-config' in mpv.conf!
+]]
+
 local settings = {
 	header = "",
 	key_showmenu = "SHIFT+ENTER",
-	
+
 	key_moveup = "UP",
 	key_movedown = "DOWN",
 	key_movepageup = "PGUP",
@@ -18,9 +20,9 @@ local settings = {
 	key_playfile = "ENTER",
 	key_playfile_with_save = "SHIFT+ENTER",
 	key_closeplaylist = "ESC",
-	
+
 	playlist_sliced_prefix = "...",
-	playlist_sliced_suffix = "...",	
+	playlist_sliced_suffix = "...",
 	watch_later_folder = "~~home/watch_later",
 	loop_cursor = true,
 	showamount = 9,
@@ -28,7 +30,7 @@ local settings = {
 	style_ass_tags = "{\\fs12\\b0\\bord1}",
 	text_padding_x = 10,
 	text_padding_y = 30,
-	
+
 	normal_file = "○ %name",
 	hovered_file = "● %name",
 }
@@ -275,12 +277,12 @@ end
 
 function showmenu()
 	load_globals()
-	if #files == 0 then 
-		
+	if #files == 0 then
+
 		return
 	end
 	add_keybinds()
 	draw_playlist()
 end
 
-bind_keys(settings.key_showmenu, "showmenu", showmenu)
+bind_keys(settings.key_showmenu, "showmenu", showmenu)
