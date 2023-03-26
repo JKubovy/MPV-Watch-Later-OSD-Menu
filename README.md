@@ -1,4 +1,4 @@
-# MPV Watch Later Playlist Manager
+# MPV Watch Later OSD Menu
 
 This is a Lua script for the MPV media player that shows a list of the saved files in the "watch later" directory in an interactive menu sorted from the newest.Base on awesome script [mpv-playlistmanager](https://github.com/jonniek/mpv-playlistmanager).
 
