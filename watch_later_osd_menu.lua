@@ -44,7 +44,7 @@ local cursor = 0
 local files = nil
 
 function parse_watch_later_files()	-- return table(index:(filepath, filename, mtime))
-	local watch_later_path = mp.command_native({"expand-path", "~~home/watch_later"})
+	local watch_later_path = mp.command_native({"expand-path", settings.watch_later_folder})
 	local files = {}
 	for _,file in ipairs(utils.readdir(watch_later_path, "files")) do
 		local filepath = watch_later_path .. '/' .. file
