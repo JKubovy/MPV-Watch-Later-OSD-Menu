@@ -35,6 +35,8 @@ local settings = {
 	hovered_file = "● %name",
 }
 
+(require "mp.options").read_options(settings, "watch_later_osd_menu")
+
 local utils = require("mp.utils")
 local assdraw = require("mp.assdraw")
 

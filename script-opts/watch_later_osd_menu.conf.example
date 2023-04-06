@@ -1,0 +1,9 @@
+### --- Watch-Later-OSD-Menu --- ###
+# Example config with vim-like keybinding
+
+key_moveup=k
+key_movedown=j
+key_movepageup=Ctrl+u
+key_movepagedown=Ctrl+d
+key_movebegin=g
+key_moveend=G
