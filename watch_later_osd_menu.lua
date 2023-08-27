@@ -56,7 +56,7 @@ function parse_watch_later_files()	-- return table(index:(filepath, filename, mt
 			return {}
 		end
 		local trimmed_first_line = first_line:gsub("#%s", "")
-		files[#files+1] = {filepath = trimmed_first_line, filename = string.match(trimmed_first_line, "[/\\]?([^/\\]+)%..+$"), mtime = utils.file_info(filepath).mtime}
+		files[#files+1] = {filepath = trimmed_first_line, filename = string.match(trimmed_first_line, "[/\\]?([^/\\]+)%.%w+$"), mtime = utils.file_info(filepath).mtime}
 	end
 	table.sort(files, function(a,b) return a.mtime > b.mtime end)
 	if #files == 0 then
